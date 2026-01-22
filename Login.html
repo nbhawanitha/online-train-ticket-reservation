@@ -57,15 +57,30 @@
 
         p {
             text-align: center;
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
         a {
             color: #003366;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Forgot password box */
+        .forgot-box {
+            display: none;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
         }
     </style>
+
+    <script>
+        function showForgotPassword() {
+            document.getElementById("forgotBox").style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
@@ -83,9 +98,19 @@
             <button type="submit">Login</button>
         </form>
 
+        <p>
+            <a onclick="showForgotPassword()">Forgot Password?</a>
+        </p>
+
+        <!-- Forgot Password Section -->
+        <div class="forgot-box" id="forgotBox">
+            <label>Email</label>
+            <input type="email" placeholder="Enter registered email">
+            <button type="button">Reset Password</button>
+        </div>
+
         <p>New user? <a href="#">Register here</a></p>
     </div>
 
 </body>
 </html>
-
