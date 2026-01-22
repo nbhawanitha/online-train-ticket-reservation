@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login | Online Train Ticket Reservation</title>
+    <title>Register | Online Train Ticket Reservation</title>
 
     <style>
         body {
@@ -15,10 +15,10 @@
             margin: 0;
         }
 
-        .login-container {
+        .register-container {
             background-color: #ffffff;
             padding: 25px;
-            width: 350px;
+            width: 380px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -35,7 +35,7 @@
         input {
             width: 100%;
             padding: 8px;
-            margin: 6px 0 15px 0;
+            margin: 6px 0 12px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
@@ -57,58 +57,44 @@
 
         p {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 12px;
         }
 
         a {
             color: #003366;
             text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
-        }
-
-        /* Forgot password box */
-        .forgot-box {
-            display: none;
-            margin-top: 15px;
-            padding-top: 10px;
-            border-top: 1px solid #ccc;
         }
     </style>
-
-    <script>
-        function showForgotPassword() {
-            document.getElementById("forgotBox").style.display = "block";
-        }
-    </script>
 </head>
 
 <body>
 
-    <div class="login-container">
-        <h2>Train Ticket Reservation</h2>
+    <div class="register-container">
+        <h2>User Registration</h2>
 
         <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+
             <label>Username</label>
-            <input type="text" placeholder="Enter username" required>
+            <input type="text" placeholder="Choose username" required>
 
             <label>Password</label>
             <input type="password" placeholder="Enter password" required>
 
-            <button type="submit">Login</button>
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm password" required>
+
+            <button type="submit">Register</button>
         </form>
 
-        <p>
-            <a onclick="showForgotPassword()">Forgot Password?</a>
+        <p>Already have an account?  
+            <a href="Login.html">Login here</a>
         </p>
-        <div class="forgot-box" id="forgotBox">
-            <label>Email</label>
-            <input type="email" placeholder="Enter registered email">
-            <button type="button">Reset Password</button>
-        </div>
-
-       <p>New user? <a href="register.html">Register here</a></p>
-        
     </div>
 
 </body>
