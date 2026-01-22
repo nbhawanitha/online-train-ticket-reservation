@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Trains | Online Train Ticket Reservation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-container {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="search-container">
+        <h2>Search Trains</h2>
+
+        <form>
+            <div class="form-group">
+                <label>From</label>
+                <input type="text" placeholder="Source Station" required>
+            </div>
+
+            <div class="form-group">
+                <label>To</label>
+                <input type="text" placeholder="Destination Station" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Journey</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Class</label>
+                <select required>
+                    <option value="">Select Class</option>
+                    <option>Sleeper</option>
+                    <option>AC</option>
+                    <option>First Class</option>
+                    <option>Non AC</option>
+                    <option>Second Class</option>
+                </select>
+            </div>
+
+            <button type="submit">Search Trains</button>
+        </form>
+    </div>
+
+</body>
+</html>
