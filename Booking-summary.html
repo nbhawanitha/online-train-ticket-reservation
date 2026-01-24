@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Summary | Online Train Ticket Reservation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .summary-item {
+            margin-bottom: 12px;
+        }
+
+        .summary-item span {
+            font-weight: bold;
+        }
+
+        .total {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+            color: #003366;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Booking Summary</h2>
+
+    <div class="summary-item">
+        <span>Train:</span> Express 101
+    </div>
+
+    <div class="summary-item">
+        <span>From:</span> Chennai
+    </div>
+
+    <div class="summary-item">
+        <span>To:</span> Bangalore
+    </div>
+
+    <div class="summary-item">
+        <span>Date:</span> 15-03-2026
+    </div>
+
+    <div class="summary-item">
+        <span>Selected Seats:</span> 1, 4, 7
+    </div>
+
+    <div class="summary-item">
+        <span>Class:</span> Sleeper
+    </div>
+
+    <div class="total">
+        Total Fare: ₹1500
+    </div>
+
+    <a href="payment.html">
+        <button>Proceed to Payment</button>
+    </a>
+</div>
+
+</body>
+</html>
